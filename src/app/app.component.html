@@ -1,0 +1,12 @@
+<div class="container-fluid py-3">
+  <div class="btn-group btn-group-sm py-5">
+    <button type="button" class="btn btn-sm btn-outline-secondary" (click)="changeLanguage('sohof-ar')"
+      [class.active]="translateService.currentLang === 'sohof-ar'">ar</button>
+    <button type="button" class="btn btn-sm btn-outline-secondary" (click)="changeLanguage('sohof-en')" [class.active]="!translateService.currentLang ||
+       translateService.currentLang === 'sohof-en'">en</button>
+    <button type="button" class="btn btn-sm btn-outline-secondary" (click)="changeLanguage('sohof-fa')"
+      [class.active]="translateService.currentLang === 'sohof-fa'">fa</button>
+
+  </div>
+  <h3>{{ "or" | translate }}</h3>
+</div>
